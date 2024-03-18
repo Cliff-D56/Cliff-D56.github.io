@@ -1,0 +1,36 @@
+.pizza img{
+    height: 346px;
+    background-size: cover;
+    z-index: -1;
+}
+.pizza h2 {
+    opacity: .5;
+    position: absolute;
+    top: 173px;
+    background-color: lightgrey;
+    text-align: center;
+}
+.pizza{
+    position: relative;
+    background-image: url("/Spades/img/pizza.png");
+    height: 346px;
+    background-size:cover;
+}
+h5{
+    font-size: 16px;
+}
+*{
+    list-style-type: none;
+}
+.form-select{
+    width: 95%;
+    margin: 1rem;
+}
+/*.card-body {*/
+/*    padding-bottom: 60px;*/
+/*@media screen and (max-width: 920px){*/
+/*.form-select{*/
+/*    width: 95%;*/
+/*}*/
+
+/*}*/
