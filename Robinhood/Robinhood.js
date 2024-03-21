@@ -7,9 +7,7 @@ let monthname = ""
 let month = 3//10
 let week = 0;
 let sum = 7420.41//2000
-let profit = -1000//-423.89
 let interestgoal = profit * -1
-let goal = 100000
 let payment = 0
 let totalpayment = 0
 let year = 2024//2023
@@ -24,9 +22,16 @@ let secondpaymentrate = 29
 let secondmultiplier = multiplier - 1
 let stock = 1825
 let recurring = 1
+
+//Parameters 
+let option = 0 // 1 equals Interest based profit goals, anything else is account based goal
+let goal = 100000 // How much full account will have 
+let profit = -1000 // How much profit from interest is wanted                                        //-423.89 
+
+
 for (let i = 7; i <= challenge; i++) {
     if (week % 2 == 0&&week!=0){
-        stock += 50
+        sum+=50
         // console.log(`Hythothetically, the stock balance will be ${stock}`)
     }
     if (week === 4) {
@@ -40,6 +45,8 @@ for (let i = 7; i <= challenge; i++) {
         interestsum += interest
         console.log(`For the month of ${monthname} ${year}, $${monthlyPayment} was put aside for savings and $${interest.toFixed(2)} was made in interest`)
         monthlyPayment = 0
+        sum -=100
+        stock +=100
         console.log(`Hythothetically, the stock balance will be ${stock}`)
     } else {
         week++
@@ -124,8 +131,9 @@ for (let i = 7; i <= challenge; i++) {
         console.log(`On ${monthname} ${year} of week ${week}, finished year of 52 week challenge, now on x${multiplier} multiplier`)
     }
 
-    //Interest Based Profit goal
 
+    if(option === 1){
+    //Interest Based Profit goal
     if (profit > 0){
         if (yearcount < 1) {
             console.log(`It took $${totalpayment} dollars, ${monthcount} months to make $${interestgoal} off interest alone`)
@@ -138,19 +146,22 @@ for (let i = 7; i <= challenge; i++) {
         }
         break
     }
-
+    }else{
     //Account Goal
+    if (sum >= goal) {
+        if (yearcount <= 1) {
+            console.log(`It took $${totalpayment} dollars with a interest sum of $${interestsum.toFixed(2)}, ${monthcount} months to reach $${(sum).toFixed(2)} based on interest and payments (${monthname + " " + year})`)
+        }
+        else {
+            console.log(`It took $${totalpayment} dollars  with a interest sum of $${interestsum.toFixed(2)}, ${yearcount.toFixed()} years and ${(monthcount - (12*yearcount)).toFixed(0)} months to reach $${sum.toFixed(2)} based on interest and payments (${monthname + " " + year})`)
+        }
+        break
+    }
 
-    // if (sum >= goal) {
-    //     if (yearcount <= 1) {
-    //         console.log(`It took $${totalpayment} dollars with a interest sum of $${interestsum.toFixed(2)}, ${monthcount} months to reach $${(sum).toFixed(2)} based on interest and payments (${monthname + " " + year})`)
-    //     }
-    //     else {
-    //         console.log(`It took $${totalpayment} dollars  with a interest sum of $${interestsum.toFixed(2)}, ${yearcount.toFixed()} years and ${(monthcount - (12*yearcount)).toFixed(0)} months to reach $${sum.toFixed(2)} based on interest and payments (${monthname + " " + year})`)
-    //     }
-    //     break
-    // }
+    }
 
+
+    
 
 
     if(secondpaymentrate==52){
