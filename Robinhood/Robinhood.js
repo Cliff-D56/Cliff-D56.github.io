@@ -2,7 +2,7 @@
 let option = 1 // 1 equals Interest based profit goals, anything else is account based goal
 let goal = 100000 // How much full account will have 
 let profit = 0 // How much profit from interest is wanted                                       //-423.89 
-let profitgoal = 1000
+let interestgoal = 1000
 
 
 let multiplier = 3
@@ -14,7 +14,6 @@ let monthname = ""
 let month = 3//10
 let week = 0;
 let sum = 7420.41//2000
-let interestgoal = profit * -1
 let payment = 0
 let totalpayment = 0
 let year = 2024//2023
@@ -135,7 +134,7 @@ for (let i = 7; i <= challenge; i++) {
 
     if(option === 1){
     //Interest Based Profit goal
-    if (profit > profitgoal){
+    if (profit > interestgoal){
         if (yearcount < 1) {
             console.log(`It took $${totalpayment} dollars, ${monthcount} months to make $${interestgoal} off interest alone`)
         }
