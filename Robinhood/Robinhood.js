@@ -1,7 +1,7 @@
 //Parameters 
 let option = 0 // 1 equals Interest based profit goals, anything else is account based goal
 let goal = 100000 // How much full account will have 
-let profit = -1000 // How much profit from interest is wanted                                        //-423.89 
+let profit = -1000 // How much profit from interest is wanted                                       //-423.89 
 
 
 let multiplier = 3
