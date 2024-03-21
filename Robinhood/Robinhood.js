@@ -1,3 +1,9 @@
+//Parameters 
+let option = 0 // 1 equals Interest based profit goals, anything else is account based goal
+let goal = 100000 // How much full account will have 
+let profit = -1000 // How much profit from interest is wanted                                        //-423.89 
+
+
 let multiplier = 3
 let challenge = 52
 let week52 = multiplier * challenge
@@ -22,12 +28,6 @@ let secondpaymentrate = 29
 let secondmultiplier = multiplier - 1
 let stock = 1825
 let recurring = 1
-
-//Parameters 
-let option = 0 // 1 equals Interest based profit goals, anything else is account based goal
-let goal = 100000 // How much full account will have 
-let profit = -1000 // How much profit from interest is wanted                                        //-423.89 
-
 
 for (let i = 7; i <= challenge; i++) {
     if (week % 2 == 0&&week!=0){
