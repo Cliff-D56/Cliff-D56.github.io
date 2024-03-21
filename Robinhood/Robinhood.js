@@ -1,7 +1,8 @@
 //Parameters 
 let option = 1 // 1 equals Interest based profit goals, anything else is account based goal
 let goal = 100000 // How much full account will have 
-let profit = -1000 // How much profit from interest is wanted                                       //-423.89 
+let profit = 0 // How much profit from interest is wanted                                       //-423.89 
+let profitgoal = 1000
 
 
 let multiplier = 3
@@ -134,7 +135,7 @@ for (let i = 7; i <= challenge; i++) {
 
     if(option === 1){
     //Interest Based Profit goal
-    if (profit > 0){
+    if (profit > profitgoal){
         if (yearcount < 1) {
             console.log(`It took $${totalpayment} dollars, ${monthcount} months to make $${interestgoal} off interest alone`)
         }
