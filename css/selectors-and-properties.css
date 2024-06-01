@@ -1,0 +1,113 @@
+:root {
+    --white: #FFFFFF;
+    --main-red: #ff0000;
+    --picture: url("https://media.licdn.com/dms/image/C4E03AQEI7jPFjT7iKQ/profile-displayphoto-shrink_200_200/0/1576859165131?e=1697673600&v=beta&t=TB8FFSxb8zxDwgkcaE08aHZyZoNXGs3xesDm_nbWJ70");
+}
+
+/* Ignore the above, I'll show it off */
+
+/* selector {
+    property: value;
+    property: value;
+}*/
+
+/* Watch me add a color property and padding to our footer */
+
+/* You do:
+
+TODO: Add a selector to change the background color of the footer element to black and a text-align property of center*/
+footer{
+    background-color: var(--white);
+    text-align: center;
+}
+/*
+ Watch me add a fancy-header and a pair of fonts to my page - one serif (font-family: 'Crimson Text', serif;); one sans (font-family: 'Bricolage Grotesque', sans-serif)
+ */
+
+
+/*
+    You do:
+    TODO: Select the class of no-decoration and add a property that would remove that list item's bullet.
+
+    TODO: Select the class of highlight and add a background-color of yellow.
+
+    Observe the li on 55 with both classes as opposed to the li on 56 with only one class.
+ */
+.no-decoration {
+    list-style-type: none;
+
+}
+.highlight {
+    background-color: #f0f00f;
+}
+/* Watch me target all h3s under the main */
+
+
+/* Watch me target the h3 that is the direct descendent of the main */
+
+
+/* TODO: Target all descendent lis of the aside element and change their color */
+aside li{
+    color: #0000FF;
+}
+
+/* TODO: Target the direct descendents of the aside element's unordered list element'ss list items and change their color from the above example
+
+    Note: This should not change the color of the header ul's children li elements */
+
+
+/* Watch me change the h2.fancy-header color + text-indent of 10px and the h3.fancy-header to a different color and text-indent of 50px */
+
+aside>ul>li{
+    color: brown;
+}
+/*TODO: Target the different elements with the class of header-list and give them different font colors. Decorate one with a underline that is dotted and red; and the other with a underline that is green and wavy */
+
+
+/* Watch me set a background image to my paragraph with an ID of mainParagraph*/
+ul.header-list{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: red;
+}
+ol.header-list{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    color: green;
+}
+/* TODO: Use the pexels website and find an image to add to an element on your page: try messing with the background-repeat or background-size properties */
+body {
+    background-image: url("https://images.pexels.com/photos/859895/pexels-photo-859895.jpeg");
+    background-size: contain;
+}
+/* Watch me adjust the anchor tags pseudo-classes */
+/* Watch me adjust the anchor tags pseudo-classes */
+
+/* Watch me teach you about variables */
+
+/* TODO: Try variables out on your own - is there a common color you could make into a CSS variable or create one to experiment with? What about a picture in multiple spots? 
+
+Remember D ~ R ~ Y ; CSS variables help you achieve that! 
+ */
+a:hover {
+    font-size: 100px;
+    padding:100px;
+    color: white;
+ }
+/* Worksheet Bonuses:
+
+
+    TODO: Look up your own font like I did on Google Fonts - replace the link elements on lines 8-9-10 with your own.
+
+    TODO: Use the "CSS rules. . ." code snippet with your selector to test your new font
+
+    examples:
+    selector1 {
+        font-family: 'Some No-Serif Font', sans-serif;
+    }
+
+    selector2 {
+        font-family: 'Some Serif Font', serif;
+    }
+*/
+

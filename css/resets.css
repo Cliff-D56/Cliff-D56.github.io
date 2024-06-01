@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    /*font-family: "Handjet";*/
+    font-weight: bolder;
+}
+img {
+    display:block;
+    max-width:100%;
+}
+ul{
+    list-style:none;
+}
+a {
+    color:inherit;
+    text-decoration: unset;
+}

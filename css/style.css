@@ -1,0 +1,46 @@
+.fancy-header {
+    color: blue; /* single line comment */
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+}
+h2 {
+    color: #00FF00;
+    text-decoration: underline;
+}
+/*@font-face {*/
+/*    font-family: myFirstFont;*/
+/*    src: url("Tilt_Prism/TiltPrism-Regular-VariableFont_XROT,YROT.ttf");*/
+/*}*/
+body {
+    /* background-color: skyblue;
+    background-image: url("../Spades/img/arianne-may-sapalaran-chess5.jpg"); */
+    /*background-repeat: repeat;*/
+    background-size: contain;
+    color: #00F;
+    /*font-family: myFirstFont;*/
+    font-family: 'Tilt Prism', cursive;
+}
+
+ul {
+    list-style: square;
+}
+ol {
+    list-style-type: upper-roman;
+}
+table{
+    font-size: large;
+}
+td{
+    padding: 10px;
+}
+a:hover{
+    color: #00FF00;
+}
+a:visited{
+    color: #FF1493FF;
+}
+footer>a{
+    font-size: 20px;
+}
