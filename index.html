@@ -37,35 +37,82 @@
                         <div class="column"><p style="padding-right: 50px;">Admitedbly I have a weakness when it comes to Frontend as I'm not visually creative</p></div>
                     </div>
                 </section>
-                <section class="row my-20" id="aboutMe" style="flex-direction: row;">
+                <section class="row my-30" id="aboutMe" style="flex-direction: row;">
                     <a id="aboutme"></a>
-                    <article style="width: 50%;"><h1>A Little About Me</h1><p class="my-30">My background for programming started with a desire to understand how games were made. Eventaully I started to wonder how devices worked and started taking programming classes in college. I then joined the US Army, where I became a helicopter mechanic that blew me off my desired career track. But now that I've completed my years of service I'm back to start my career in programming. Perhaps as a Backend Developer.<br><br> The GIF is actually one of my first sucessful pair programming projects where I was mostly responsible for the Backend logic and API utilization. It's a Movie Tracker where one can search and save their favorite movies and rate them based on their personal preference. An automated summary and Trailer from youtube is provided as well as edit and delete permissions.</p></article>
-                    <div>
+                    <article><h1>A Little About Me</h1><p class="my-30">My background for programming started with a desire to understand how games were made. Eventaully I started to wonder how devices worked and started taking programming classes in college. I then joined the US Army, where I became a helicopter mechanic that blew me off my desired career track. But now that I've completed my years of service I'm back to start my career in programming. The first stop in my journey was working in San Antonio TX called Codeup which allowed me to obtain FullStack Web Developer experience.<br><br> The GIF is actually one of my first sucessful pair programming projects where I was mostly responsible for the Backend logic and API utilization. It's a Movie Tracker where one can search and save their favorite movies and rate them based on their personal preference. An automated summary and Trailer from youtube is provided as well as edit and delete permissions.</p></article>
+                    <div style="width: 40%;">
                         <img src="assets/MovieApp.gif">
                     </div>
                 </section>
                 <section class="row my-30" id="projects" style="padding-top: 20px;">
-                    <h1 class="my-20">Projects</h1>
+                    <h1 class="my-20 indent">Projects</h1>
                     <div id="projectguide">
                         <div class="row my-20">
-                            <div class="column">
+                            <div class="column indent">
                                 <h2>2D Platform Test Game</h2>
-                                <h3>Topic: Unreal Engine Game Development</h3>
+                                <h3 class="my-10">Topic: Unreal Engine Game Development</h3>
                                 <article><p>The first game I've ever made, features a damage and life system, as well as a coin collection and apple projectile system with roaming enemies.</p></article>
-                                <h3>Project Highlights</h3>
-                                <ul>
+                                <h3 class="my-20">Project Highlights</h3>
+                                <ul class="indent">
                                     <li>Blueprints</li>
                                     <li>Collison Mechanics</li>
                                     <li>Enhanced Inputs</li>
                                 </ul>
+                                <!-- <a href="">Download Link</a> -->
                             </div>
                             <div class="column">
                                     <img src="./assets/Recording 2024-04-28 220450.gif">
                             </div>
                         </div>
+                        <div class="row my-20">
+                            <div class="column indent">
+                                <h2>Swapping Fixed Camera System</h2>
+                                <h3 class="my-10">Topic: Unreal Engine</h3>
+                                <article><p>In this project, I created a camera system that allows users to cycle through several different camera views. To accomplish this, I used Blueprints to search and input CameraActors into an array and allowing the controls to cycle through each camera.</p></article>
+                                <h3 class="my-20">Project Highlights</h3>
+                                <ul class="indent">
+                                    <li>Blueprints</li>
+                                    <li>Widgets</li>
+                                    <li>Searching through active Actors</li>
+                                </ul>
+                                 <!-- <a href="">Download Link</a> -->
+                            </div>
+                            <div class="column">
+                                    <img src="./assets/ThirdPersonCameraSystem Preview.gif">
+                            </div>
+                        </div>
+                        <div class="row my-20">
+                            <div class="column indent">
+                                <h2>Description Widget</h2>
+                                <h3 class="my-10">Topic: Unreal Engine</h3>
+                                <article><p>In this project, I created a description system that allows the user to get a basic description of an active asset/actor. Doing so required going into Blueprints and utilizing the onclick event for actors created from a class that is specifically targeted for description.</p></article>
+                                <h3 class="my-20">Project Highlights</h3>
+                                <ul class="indent">
+                                    <li>Blueprints</li>
+                                    <li>On Hit Events</li>
+                                    <li>Widgets</li>
+                                    <li>Click Events</li>
+                                </ul>
+                             <!-- <a href="">Download Link</a> -->
+                            </div>
+                            <div class="column">
+                                    <img src="./assets/DescriptionWidgetPreview.gif">
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <!-- <img src="assets/CircuitBoard.gif"> -->
+                <section class="row" id="hobbies">
+                    <h1 class="indent">Hobbies</h1>
+                    <article class="my-20">
+                        <p>Hobbies of mine typically include:</p>
+                        <ul class="indent">
+                            <li>Playing Video Games (Last game I finished was Final Fantasy VII Rebrith)</li>
+                            <li>Reading (Currently reading Throne of Glass Series)</li>
+                            <li>Listening to Music (Soundtracks are my niche)</li>
+                            <li>Writing (Currently writing a book, already have 93 chapters)</li>
+                        </ul>
+                    </article>
+                </section>
             </div>
             <div class="column" id="sidebar">
                 <div class="row" id="profile">
@@ -75,18 +122,20 @@
                         <a href="https://www.linkedin.com/in/clifford-gardner-959509139/">LinkedIn Page</a>
                     </div>
                 </div>
-                <div class="row" id="sorting" style="background-color: black;">
+                <div class="row" id="sorting">
                     <div id="TOC">
                         <ul>
                             <li><a href="#top">Intro</a></li>
                             <li><a href="#aboutme">About Me</a></li>
-                            <li><a>Projects</a></li>
-                            <li><a>Hobbies</a></li>
-                            <li><a>Contact Me</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#hobbies">Hobbies</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row" id="links" style="background-color: white;"></div>
+                <div class="row" id="contact">
+                    <h3>Contact Information:</h3>
+                    <h4 style="width: 100%;">Work Email: cliffordgardner9@gmail.com</h4>
+                </div>
             </div>
         </div>
     </div>
