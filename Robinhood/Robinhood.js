@@ -1,6 +1,6 @@
 //Parameters 
-let option = 1 // 1 equals Interest based profit goals, anything else is account based goal
-let goal = 100000 // How much full account will have 
+let option = 2 // 1 equals Interest based profit goals, anything else is account based goal
+let goal = 1000000 // How much full account will have 
 let profit = 0 // How much profit from interest is wanted                                       //-423.89 
 let interestgoal = 1000
 
@@ -20,7 +20,7 @@ let year = 2024//2023
 let monthlyPayment = 0
 let interestGold = 0
 let info = document.querySelector(".info");
-let interest = (sum * .05 / 12) - 5
+let interest = (sum * .0425 / 12) - (50/12)
 let interestsum = 0
 let membership = document.querySelector("#Interest").value;
 let secondpayment = 0
@@ -172,9 +172,9 @@ for (let i = 7; i <= challenge; i++) {
         secondpaymentrate=0
         secondmultiplier++
         if(secondmultiplier === multiplier){
-            console.log(`In ${monthname} Week ${week}, The payment multipliers line up`)
             align+=1
             deposit= 50 * align
+            console.log(`In ${monthname}, ${year} Week ${week}, The payment multipliers line up, Deposit will now be $${deposit}`)
         }
     }
     else{
