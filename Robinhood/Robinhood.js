@@ -113,6 +113,7 @@ for (let i = 7; i <= challenge; i++) {
     <div class="card-body">    
     Payment: $${i * multiplier}<br>
     Second Payment: $${secondpaymentrate * (secondmultiplier)}<br>
+    Total Payment: $${i * multiplier+secondpaymentrate * (secondmultiplier)}<br>
     Total: is $${totalpayment}<br>
     Week: ${week}<br>
     Date: ${monthname},${year}<br> 
