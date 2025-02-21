@@ -7,7 +7,7 @@ panels.forEach((panel)=>{
         })
         panel.classList.add("active")})
 })
-const images = [`edward1.png`,`edward2.png`]
+const images = ["edward1.png","edward2.png"]
 const edward = document.querySelector("#edward")
 const edwardPics = getPics("edward")
 function getPics(name){
@@ -22,9 +22,8 @@ function getPics(name){
 }
 // @ts-ignore
 edward.addEventListener("click",()=>{
-    console.log(edward.style.backgroundImage)
-    edward.style.backgroundImage ===`url(${edwardPics[0]}`? 
+    edward.style.transition = "all 0.5s ease-in-out";
+    edward.style.backgroundImage=='url("'+edwardPics[0]+'")'? 
     edward.style.backgroundImage = `url(${edwardPics[1]}`: 
     edward.style.backgroundImage = `url(${edwardPics[0]}`
-    console.log(edward.style.backgroundImage)
 })
