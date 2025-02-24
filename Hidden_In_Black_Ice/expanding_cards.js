@@ -1,5 +1,6 @@
 class Character{
     imagePaths=[];
+    bio="";
     constructor(name,images,id){
         this.name = name;
         this.images = images;
@@ -38,7 +39,6 @@ let Edward = new Character("edward",["edward1.png","edward2.png"],"#edward");
 let Walter = new Character("walter",["walter1.png"],"#walter");
 
 const edward = Edward.element;
-
 const edwardPics = Edward.imagePaths;
 
 
