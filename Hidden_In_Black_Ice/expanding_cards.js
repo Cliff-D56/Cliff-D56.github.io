@@ -40,8 +40,8 @@ let Walter = new Character("walter",["walter1.png"],"#walter");
 
 const edward = Edward.element;
 const edwardPics = Edward.imagePaths;
-
-
+const edwardJson = JSON.stringify(Edward);
+console.log(edwardJson);
 // @ts-ignore
 edward.addEventListener("click",()=>{
     console.log(edward.style.backgroundImage)
