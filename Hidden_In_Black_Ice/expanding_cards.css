@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: "Sixtyfour";
+    /* font-family: "Playwrite AU VIC Guides", sans-serif; */
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,9 +31,17 @@ body {
     margin: 10px;
     transition: all 1000ms ease-in;
 }
-
+.panel p{
+    position: absolute;
+    font-size: 18px;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    max-width: 20%;
+    opacity: 0;
+}
 .panel h3{
-    font-size: 24px;
+    font-size: 30px;
     position: absolute;
     top: 20px;
     left:20px;
@@ -44,6 +53,9 @@ body {
     flex:30
 }
 .panel.active h3{
+    opacity: 1;
+}
+.panel.active p{
     opacity: 1;
 }
 
