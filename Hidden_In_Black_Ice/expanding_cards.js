@@ -1,6 +1,7 @@
 let Characters = [];
 const container = document.querySelector(".container");
 class Character{
+    //TODO Jsonify info for faster access
     imagePaths=[];
     bio=new Map();
     constructor(fullname,name,images,id){
