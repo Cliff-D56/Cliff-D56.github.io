@@ -51,7 +51,7 @@ function createPanel(Characters){
 let Edward = new Character("Edward","edward",["edward1.png","edward2.png"],"#edward");
 let Rahim = new Character("Rahim","rahim",["rahim1.png"],"#rahim")
 let Walter = new Character("Walter Stonewell","walter",["walter1.png"],"#walter");
-Edward.bio.set(`./edward1.png`,"Edward is a character in the game. He is a detective who is");
+Edward.bio.set(`./edward1.png`,"Edward is a ");
 // createPanel(Characters);
 const panels = document.querySelectorAll(".panel")
 panels.forEach((panel)=>{
