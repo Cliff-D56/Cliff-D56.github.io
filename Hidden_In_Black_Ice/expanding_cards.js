@@ -63,6 +63,7 @@ const panels = document.querySelectorAll(".panel")
 panels.forEach((panel)=>{
     function updatePanel(Character){
         panel.getElementsByTagName("h3")[0].innerHTML = Character.fullname;
+        // TODO have bio tied to corresponding picture/skin
         panel.getElementsByTagName("p")[0].innerHTML = Character.bio.get(Character.imagePaths[0]);
     }
     panel.addEventListener("click",()=>{
@@ -76,6 +77,7 @@ panels.forEach((panel)=>{
                 character.element = panel;
                 updatePanel(character);
             }
+            // TODO Replace with skin selector that has map tied to pic and bio
             // TODO Remove after creating skin selector
             if(character.imagePaths.length >1){
                 character.element.addEventListener("click",()=>{
