@@ -52,7 +52,12 @@ function createPanel(Characters){
 let Edward = new Character("Edward","edward",["edward1.png","edward2.png"],"#edward");
 let Rahim = new Character("Rahim","rahim",["rahim1.png"],"#rahim")
 let Walter = new Character("Walter Stonewell","walter",["walter1.png"],"#walter");
-Edward.bio.set(`./edward1.png`,"Edward is a ");
+Edward.bio.set(`./edward1.png`,`Once upon a time was called Wrath the Furious, a weapon with no conscious thought and only desire was to destroy whatever was in it's path. 
+    After gaining a conscious, Edward is wracked with guilt for the things he's done and is trying to move forward, well aware that the ghosts of his past are right behind him and making moves of their own.`);
+Rahim.bio.set(`./rahim1.png`,`A warrior from Blackdust whose mother was killed right in front of him by the monster Wrath the Furious. This single act had set him down a path of pain 
+    and revenge that has consumed every facet of his life and all but erased the happy child his mother protected. Now armed with a katana he forged with the sole purpose of vengence, Rahim will cut down anything in his path regardless if they be friend or foe.`)
+Walter.bio.set(`./walter1.png`,`Walter Stonewell is a man born from the busom of war. There is no guilt or hesistation, only victory or death. With the birth of his daughter and the death of his wife, he aims to leave that past behind but any semblance of happiness has forever been wiped from his being.
+    All that remains is his steadfast duty to defend his ward, ready and willing to destroy anything that threatens his charge, damning whatever consequences that follow.`)
 // createPanel(Characters);
 const panels = document.querySelectorAll(".panel")
 panels.forEach((panel)=>{
