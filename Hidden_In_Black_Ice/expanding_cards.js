@@ -92,6 +92,24 @@ panels.forEach((panel)=>{
         }
     })
 })
+// TODO find a place to put progress bar
+function skinSelector(character){
+    character.element.innerHTML+=`
+    <div class="progress-container">
+    <div class="progress" id="progress"></div>
+    </div>
+    <button class="btn" id="prev" disabled>Prev</button>
+    <button class="btn" id="next" >Next</button>`;
+    const skinBar = document.querySelector(".progress-container")
+    character.imagePaths.forEach(function(element,index){
+        if(index==0){
+            skinBar.innerHTML+=`<div class="circle active">${index+1}</div>`
+        }
+        else{
+        skinBar.innerHTML+=`<div class="circle">${index+1}</div>`
+        }
+    })
+}
 const edward = Edward.element;
 const edwardPics = Edward.imagePaths;
 // @ts-ignore
