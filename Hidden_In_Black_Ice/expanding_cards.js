@@ -67,8 +67,9 @@ panels.forEach((panel)=>{
         panel.getElementsByTagName("h3")[0].innerHTML = Character.fullname;
         // TODO have bio tied to corresponding picture/skin
         panel.getElementsByTagName("p")[0].innerHTML = Character.bio.get(Character.imagePaths[0]);
+        // panel.getElementsByTagName("")[0].innerHTML 
     }
-    panel.addEventListener("click",()=>{
+    panel.addEventListener("click",function clickSelector(){
         panels.forEach((panel)=>{
             panel.classList.remove("active")
         })
@@ -82,33 +83,42 @@ panels.forEach((panel)=>{
             // TODO Replace with skin selector that has map tied to pic and bio
             // TODO Remove after creating skin selector
             if(character.imagePaths.length >1){
-                character.element.addEventListener("click",()=>{
-                    character.element.style.transition = "all 0.5s ease-in-out";
-                    character.element.style.backgroundImage==`url("${character.imagePaths[0]}")`? 
-                    character.element.style.backgroundImage = `url(${character.imagePaths[1]}`: 
-                    character.element.style.backgroundImage = `url(${character.imagePaths[0]}` 
-                })
+                // character.element.addEventListener("click",()=>{
+                //     character.element.style.transition = "all 0.5s ease-in-out";
+                //     character.element.style.backgroundImage==`url("${character.imagePaths[0]}")`? 
+                //     character.element.style.backgroundImage = `url(${character.imagePaths[1]}`: 
+                //     character.element.style.backgroundImage = `url(${character.imagePaths[0]}` 
+                // })
+
+                // TODO create toggle for event listener when clicked to another profile
+                character.element.removeEventListener("click",clickSelector,false)
+                skinSelector(character)
             }
         }
     })
 })
 // TODO find a place to put progress bar
+// TODO have CSS put bar under photo
 function skinSelector(character){
-    character.element.innerHTML+=`
-    <div class="progress-container">
-    <div class="progress" id="progress"></div>
-    </div>
-    <button class="btn" id="prev" disabled>Prev</button>
-    <button class="btn" id="next" >Next</button>`;
-    const skinBar = document.querySelector(".progress-container")
-    character.imagePaths.forEach(function(element,index){
-        if(index==0){
-            skinBar.innerHTML+=`<div class="circle active">${index+1}</div>`
-        }
-        else{
-        skinBar.innerHTML+=`<div class="circle">${index+1}</div>`
-        }
-    })
+    if(!character.element.innerHTML.includes("progress")){
+        character.element.innerHTML+=`
+        <div class="skin selector">
+        <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        </div>
+        <button class="btn" id="prev" disabled>Prev</button>
+        <button class="btn" id="next" >Next</button>
+        </div>`;
+        const skinBar = document.querySelector(".progress-container")
+        character.imagePaths.forEach(function(element,index){
+            if(index==0){
+                skinBar.innerHTML+=`<div class="circle active">${index+1}</div>`
+            }
+            else{
+            skinBar.innerHTML+=`<div class="circle">${index+1}</div>`
+            }
+        })
+    }
 }
 const edward = Edward.element;
 const edwardPics = Edward.imagePaths;
