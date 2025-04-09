@@ -99,6 +99,7 @@ panels.forEach((panel)=>{
 })
 // TODO find a place to put progress bar
 // TODO have CSS put bar under photo
+// TODO have the parameter be the character and current panel
 function skinSelector(character){
     // TODO instead of ADDING to HTML ASSIGN it a value
     if(!character.element.innerHTML.includes("progress")){
