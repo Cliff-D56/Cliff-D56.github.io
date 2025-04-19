@@ -20,7 +20,7 @@ let year = 2024//2023
 let monthlyPayment = 0
 let interestGold = 0
 let info = document.querySelector(".info");
-let interest = (sum * .0425 / 12) - (50/12)
+let interest = (sum * .04 / 12) - (50/12)
 let interestsum = 0
 let membership = document.querySelector("#Interest").value;
 let secondpayment = 0
@@ -30,6 +30,8 @@ let stock = 1825
 let recurring = 1
 let align = 1
 let deposit = 50 * align
+
+// Todo: create date system to accurately track payments
 
 for (let i = 7; i <= challenge; i++) {
     if (week % 2 == 0&&week!=0){
