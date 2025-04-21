@@ -1,0 +1,1 @@
+SELECT * FROM foodlister_db.food;
